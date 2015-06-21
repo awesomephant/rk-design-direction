@@ -1,0 +1,173 @@
+$lightgray: #f2f2f2;
+$green: #ACEF85;
+$blue: #72bdff;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.colour {
+	border-radius: 3px;
+	flex-basis: 24%;
+    height: 400px;
+    margin-right: 10px;
+	display: flex;
+    justify-content: center;
+	position: relative;
+    span {
+        flex-basis: 100%;
+    }
+    
+    .colour-name {
+        text-align: center;
+		align-self: center;
+		font-size: 1.5rem;
+		color: rgba(black, .2);
+        text-transform: lowercase;
+	}
+    
+    .annotation {
+        bottom: -18px;
+        left: 0;
+        z-index: 100;
+        position: absolute;
+    }
+}
+
+.colours, .images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.patients h2{
+    background: $green;    
+}
+.doctors h2{
+    background: $blue;    
+}
+
+.components {
+    font-family: proxima-nova;
+    li {
+        list-style: none;
+        margin-bottom: 2rem;
+    }
+    
+    main {
+        padding: 1rem;
+        max-width: 45rem;
+        font-family: proxima-nova;
+    }
+    
+    p {
+        line-height: 1.55;
+        font-size: 17px;
+        margin-bottom: 1rem;
+        &.intro {
+            font-weight: 600;
+            font-size: 1.5rem;
+            margin-bottom: .5rem;
+        }
+    }
+    
+    .header-page {
+        margin-bottom: 1rem;
+        h2 {
+            font-weight: normal;
+            padding: 1rem;
+            color: white;
+        }
+        h3 {
+            font-weight: normal;
+            background: $lightgray;
+            padding: 2rem 1rem;
+            font-size: 2.5rem;
+        }
+    }
+    
+    .header-hub {
+        h2 {
+            font-weight: normal;
+            color: white;
+            font-size: 2.5rem;
+            padding: 2rem 1rem;
+        }
+    }
+}
+
+.images {
+    li {
+        height: 350px;
+        list-style: none;
+        padding-right: 5px;
+        padding-bottom: 5px;
+    }
+    img {
+        display: block;
+        height: 100%;
+        width: auto;
+    }
+}
+
+.typeface {
+    font-weight: normal;
+    margin-bottom: 3rem;
+    li {
+        display: block;
+        margin-bottom: .5rem;
+    }
+}
+
+.font-copy {
+    max-width: 40rem;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1.55;
+    margin-bottom: 1rem;
+}
+
+.annotation {
+    font-size: 12px;
+    color: lightgray;
+    font-family: Helvetica;
+    margin-right: 1em;
+    font-weight: 100 !important;
+}
+
+body {
+ 	font-family: sans-serif;
+}
+
+.document-header {
+    padding: 2rem 5%;
+    border-bottom: 1px solid lightgray;
+    
+    h1, h2 {
+        font-size: 1rem;        
+        margin: 0;
+    }
+}
+
+section {
+    padding: 0 5%;
+	margin-bottom: 6rem;
+}
+
+.section-title {
+	margin-bottom: 1rem;
+    color: rgb(50,50,50);
+    font-weight: normal;
+    
+    &.typeface {
+        color: lightgray;    
+    }
+}
+
+.version {
+	color: lightgray;
+}
+
+.document-header {
+	margin-bottom: 2rem;
+}

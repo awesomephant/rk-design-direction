@@ -1,0 +1,82 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+  <script>
+  (function(d) {
+    var config = {
+      kitId: 'njn2yze',
+      scriptTimeout: 3000
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+    </script>
+</head>
+<body>
+    
+    <header class="document-header">
+        <h1 class="section-title">Zwicker & Partner Design Direction <span class='annotation'>Version {{ version }}</span></h1>
+    </header>
+    <section>
+        <h2 class='section-title'>Colours</h2>
+        <ul class="colours">
+           {{#each colors}}
+               <li class="colour" style='background-color: {{ color }}'>
+                   <span class="colour-name">{{ color }}</span>
+                   <span class="annotation">{{ description }}</span>
+               </li>
+           {{/each}}
+        </ul>
+    </section>
+    <section>
+        <h2 class="section-title">Typography</h2>
+        
+        {{#each typefaces}}
+        <h3 class='section-title typeface'>{{this}}</h3>
+        <span class="annotation">Paragraph - 17px</span>
+        <p class='font-copy' style='font-family: {{this}}'>
+            {{ ../demoParagraph }}
+        </p>
+        <ul style='font-family: {{this}}' class='typeface'>
+            <li style='font-size: 40px;'><span class="annotation typeface-size">40</span>{{../demoText}}</li>
+            <li style='font-size: 30px'><span class="annotation typeface-size">30</span>{{../demoText}}</li>
+            <li style='font-size: 24px'><span class="annotation typeface-size">24</span>{{../demoText}}</li>
+            <li style='font-size: 18px'><span class="annotation typeface-size">18</span>{{../demoText}}</li>
+            <li style='font-size: 16px'><span class="annotation typeface-size">16</span>{{../demoText}}</li>
+            <li style='font-size: 14px'><span class="annotation typeface-size">14</span>{{../demoText}}</li>
+        </ul>
+        <ul style='font-size: 30px; font-family: {{this}}' class='typeface'>
+            <li style='font-weight: 800;'><span class="annotation">800</span>{{../demoText}}</li>
+            <li style='font-weight: 600'><span class="annotation">600</span>{{../demoText}}</li>
+            <li style='font-weight: 500'><span class="annotation">500</span>{{../demoText}}</li>
+            <li style='font-weight: 300'><span class="annotation">300</span>{{../demoText}}</li>
+            <li style='font-weight: 100'><span class="annotation">100</span>{{../demoText}}</li>
+        </ul>
+        {{/each}}
+        <ul class="components">
+        <li>  
+            <header class='header-page doctors'>
+                <h2>Ärzteinformation</h2>
+                <h3>Strahlentherapie</h3>
+            </header>
+        </li>
+        <li>
+            <header class="header-hub patients">
+                <h2>Patienteninformation</h2>
+            </header>
+        </li>
+        </ul>
+    </section>
+    <section>
+        <h2 class="section-title">Photography</h2>
+        <ul class='images'>
+        {{#each images}}
+            <li>
+                <img src="{{this}}" alt="">
+            </li>
+        {{/each}}
+        </ul>
+    </section>
+</body>
+</html>

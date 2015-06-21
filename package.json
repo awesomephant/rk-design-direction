@@ -1,0 +1,16 @@
+{
+	"name": "rk",
+	"author": "Max Koehler",
+	"devDependencies": {
+        "grunt": "*",
+		"grunt-execute": "*",
+		"grunt-contrib-watch": "*",
+        "grunt-browser-sync": "*",
+		
+        "grunt-contrib-sass": "*",
+		"grunt-postcss": "*",
+        "autoprefixer-core": "*",
+        "cssnano": "*",
+        "handlebars": "*"
+	}
+}
