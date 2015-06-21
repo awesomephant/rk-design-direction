@@ -19,7 +19,7 @@
         <h1 class="section-title">Zwicker & Partner Design Direction <span class='annotation'>Version {{ version }}</span></h1>
     </header>
     <section>
-        <h2 class='section-title'>Colours</h2>
+        <h2 class='section-title'>Possible Colours</h2>
         <ul class="colours">
            {{#each colors}}
                <li class="colour" style='background-color: {{ color }}'>
@@ -30,7 +30,7 @@
         </ul>
     </section>
     <section>
-        <h2 class="section-title">Typography</h2>
+        <h2 class="section-title">Possible Typefaces</h2>
         
         {{#each typefaces}}
         <h3 class='section-title typeface'>{{this}}</h3>
@@ -53,8 +53,7 @@
             <li style='font-weight: 300'><span class="annotation">300</span>{{../demoText}}</li>
             <li style='font-weight: 100'><span class="annotation">100</span>{{../demoText}}</li>
         </ul>
-        {{/each}}
-        <ul class="components">
+        <ul class="components" style='font-family: {{this}}'>
         <li>  
             <header class='header-page doctors'>
                 <h2>Ärzteinformation</h2>
@@ -67,6 +66,7 @@
             </header>
         </li>
         </ul>
+        {{/each}}
     </section>
     <section>
         <h2 class="section-title">Photography</h2>

@@ -1,10 +1,16 @@
 $lightgray: #f2f2f2;
 $green: #ACEF85;
 $blue: #72bdff;
+$red: #ff8272;
 
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-feature-settings: "liga";
+    text-rendering: optimizeLegibility;
 }
 
 .colour {
@@ -47,6 +53,10 @@ $blue: #72bdff;
     background: $blue;    
 }
 
+.blog h2{
+    background: $red;    
+}
+
 .components {
     font-family: proxima-nova;
     li {
@@ -61,8 +71,8 @@ $blue: #72bdff;
     }
     
     p {
-        line-height: 1.55;
-        font-size: 17px;
+        line-height: 1.5;
+        font-size: 18px;
         margin-bottom: 1rem;
         &.intro {
             font-weight: 600;
@@ -74,14 +84,14 @@ $blue: #72bdff;
     .header-page {
         margin-bottom: 1rem;
         h2 {
-            font-weight: normal;
+            font-weight: 500;
             padding: 1rem;
             color: white;
         }
         h3 {
             font-weight: normal;
             background: $lightgray;
-            padding: 2rem 1rem;
+            padding: 1.4rem 1rem;
             font-size: 2.5rem;
         }
     }
@@ -91,7 +101,7 @@ $blue: #72bdff;
             font-weight: normal;
             color: white;
             font-size: 2.5rem;
-            padding: 2rem 1rem;
+            padding: 1.5rem 1rem;
         }
     }
 }
