@@ -1,5 +1,5 @@
 {
-    "version": "1.3",
+    "version": "1.4",
     "demoText": "A quick brown fox jumps over the lazy dog",
     "demoParagraph": "Mit unseren modernen Linearbeschleunigern können wir heute verschiedene Arten von Strahlen mit sehr hoher Energie zu erzeugen, die auch die in der Tiefe des Körpers gelegene Tumoren erreichen. Das schont Nachbarorgane und die Hautoberfläche. Mit der rasanten Entwicklung bildgebender Verfahren wie der Computer- und der Kernspintomographie können wir zudem eine sehr präzise Behandlungsplanung vornehmen. In manchen Fällen wird die Strahlenquelle sogar tumornah in den Körper eingebracht.",
     "colors": [
@@ -22,7 +22,7 @@
     ],
     "typefaces": [
         "proxima-nova",
-        "ff-tisa-web-pro"
+        "proxima-nova-soft"
     ],
     "images": [
         "https://www.radiologen-konstanz.de/typo3temp/pics/222213bcba.jpg",
