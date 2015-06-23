@@ -29,7 +29,8 @@ module.exports = function(grunt) {
 			options: {
 			},
 			files: {
-				'css/main.css': 'sass/main.scss'
+				'css/main.css': 'sass/main.scss',
+                'css/prototype.css': 'sass/prototype.scss'
 			}
 		}
 	},
@@ -38,7 +39,6 @@ module.exports = function(grunt) {
         options: {
             processors: [
                 require('autoprefixer-core')({browsers: 'last 2 versions'}), // add vendor prefixes
-                require('cssnano')() // minify the result
             ]
         },
         dist: {
